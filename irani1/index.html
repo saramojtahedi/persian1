@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <title> chemisrty </title>
+
+    <script src="js/jquery.js"></script>
+  	<script>
+  		$(document).ready(function(){
+
+  			$(".next").click(function(){
+  				var index = $("img.active").index();
+  				$(".slider img.active").fadeOut().removeClass("active").next().fadeIn().addClass("active")
+          if(index == $(".last").index()){
+  					$(" .slider img:first-child").fadeIn().addClass("active")
+  				}
+  			})
+
+  			$(".prev").click(function(){
+  				var index = $(".slider img.active").index();
+  				$(".slider img.active").fadeOut().removeClass("active").prev().fadeIn().addClass("active")
+  				if(index == 0){
+  					$(".slider img:last-child").fadeIn().addClass("active");
+  				}
+  			})
+
+  			setInterval(function(){
+  				var index = $("img.active").index();
+  				$(".slider img.active").fadeOut().removeClass("active").next().fadeIn().addClass("active")
+  				if(index == $(".last").index()){
+  					$(".slider img:nth-child(1)").fadeIn().addClass("active")
+  				}
+  			}, 10000)
+
+  		})
+  	</script>
+
+  </head>
+  <body dir="rtl">
+
+
+
+    <div class="slider">
+  		<i class="fa fa-angle-left fa-5x prev"></i>
+
+  		<div class="images">
+  			<img src="img/chem1.jpg" class="active">
+  			<img src="img/chem2.jpg">
+        <img src="img/chem4.jpg" class="last">
+  		</div>
+  		<i class="fa fa-angle-right fa-5x next"></i>
+  	</div>
+
+    <nav>
+      <ul>
+        <li> خانه </li>
+        <li> آزمایشگاه ها </li>
+        <li> خدمات آزمایشگاهی </li>
+        <li> مشتریان </li>
+        <li> درباره ما </li>
+        <li> ارتباط با ما </li>
+      </ul>
+
+      <div class="ham">
+        <div class="hams"></div>
+        <div class="hams"></div>
+        <div class="hams"></div>
+      </div>
+
+      <div class="buttons">
+        <button type="button" name="button"> ثبت نام | ورود </button>
+      </div>
+    </nav>
+
+    <div class="info">
+      <h1> آزمایشگاه شیمی کیکاووس </h1>
+      <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم لورم لورم </p>
+      <button type="button" name="button"> گرفتن نوبت </button>
+    </div>
+
+    <div class="centinf">
+      <div class="infs"><img src="img/vector.png" alt=""><span> آزمایشگاه اسپکترومتری نشری </span></div>
+      <div class="infs"><img src="img/vector.png" alt=""><span> آزمایشگاه طیف سنج جرمی </span></div>
+      <div class="infs"><img src="img/vector.png" alt=""><span> آزمون در محل پروژه </span></div>
+    </div>
+
+    <div class="title">
+      <img src="img/divider.png" alt="">
+      <span> خدمات ما : </span>
+      <img src="img/divider.png" alt="">
+    </div>
+
+    <div class="khadamat">
+      <div class="khedmat">
+        <img src="img/Pngtree.png" alt="">
+        <h4> تجزیه مواد </h4>
+        <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم لورم لورم </p>
+      </div>
+      <div class="khedmat">
+        <img src="img/Pngtree.png" alt="">
+        <h4> مشاوره </h4>
+        <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم لورم لورم </p>
+      </div>
+      <div class="khedmat">
+        <img src="img/Pngtree.png" alt="">
+        <h4> نوبت گیری </h4>
+        <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم لورم لورم </p>
+      </div>
+      <div class="khedmat">
+        <img src="img/Pngtree.png" alt="">
+        <h4> کالیبراسیون </h4>
+        <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم لورم لورم </p>
+      </div>
+    </div>
+
+    <div class="kaj">
+      <div class="rast">
+        <div class="inside">
+          <h2> برای رزرو وقت و مشاهده تقویم کاری آزمایشگاه کلیک کنید </h2>
+          <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم لورم لورم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم لورم لورم </p>
+          <button type="button" name="button"> تقویم کاری </button>
+          <button type="button" name="button"> رزرو نوبت </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="title">
+      <img src="img/divider.png" alt="">
+      <span> دستگاه های پر فروش : </span>
+      <img src="img/divider.png" alt="">
+    </div>
+
+    <div class="khadamat">
+      <div class="khedmat">
+        <img src="img/hud.jfif" alt="">
+        <h4> هود آزمایشگاهی </h4>
+        <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم لورم لورم </p>
+      </div>
+      <div class="khedmat">
+        <img src="img/hud4.jpg" alt="">
+        <h4> ph متر </h4>
+        <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم لورم لورم </p>
+      </div>
+      <div class="khedmat">
+        <img src="img/hud2.jfif" alt="">
+        <h4> هات پلیت </h4>
+        <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم لورم لورم </p>
+      </div>
+      <div class="khedmat">
+        <img src="img/hud3.jpg" alt="">
+        <h4> سانتریفیوژ </h4>
+        <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم لورم لورم </p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="foot1">
+        <h3> فهرست : </h3>
+        <ul>
+          <li> فهرست یک </li>
+          <li> فهرست دو </li>
+          <li> فهرست سه </li>
+          <li> فهرست چهار </li>
+          <li> فهرست پنج </li>
+        </ul>
+      </div>
+      <div class="foot2">
+        <h3> ارتباط با ما : </h3>
+        <h4> شماره : </h4>
+        <h6> 021-44578839 </h6>
+        <h4> ایمیل : </h4>
+        <h6> silkje@gmail.com </h6>
+        <h4> آدرس : </h4>
+        <h6> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ازپ </h6>
+      </div>
+      <div class="foot3">
+        <h3> شبکه های اجتماعی : </h3>
+        <div class="social">
+          <i class="fa  fa-twitter"></i>
+          <i class="fa  fa-facebook"></i>
+          <i class="fa  fa-whatsapp"></i>
+        </div>
+        <h3> مشتریان ما : </h3>
+        <div class="companies">
+          <img src="img/10.jpg" alt="">
+          <img src="img/15.jpg" alt="">
+          <img src="img/33.jpg" alt="">
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer"> طراح قالب : سارا مجتهدی </div>
+
+</body>
+</html>
